@@ -1,4 +1,6 @@
-# Shoe Drive Newsletter App
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 A React web app for the **Shoes for The Homeless Youth Ambassadors Program** newsletter. It displays story accounts of youth-led shoe drives in different communities.
 
@@ -6,6 +8,15 @@ A React web app for the **Shoes for The Homeless Youth Ambassadors Program** new
 - High school student learning React for the first time
 - Cares a lot about clean, beautiful UI
 - **Important:** Do not write or edit code unless explicitly asked. Explain concepts, let the user write the code, then review/correct what they wrote. This is a learning process.
+
+## Commands
+```
+npm run dev      # start dev server at http://localhost:5173/
+npm run build    # production build
+npm run lint     # run ESLint
+npm run preview  # preview the production build locally
+```
+There is no test suite configured.
 
 ## Tech Stack
 - React 19 + Vite
@@ -18,7 +29,7 @@ A React web app for the **Shoes for The Homeless Youth Ambassadors Program** new
 src/
 ├── App.jsx               # Route definitions (/, /about, /stories/:id)
 ├── App.css               # Page layout styles (header, story grid, active nav)
-├── index.css             # Global styles, CSS variables, dark mode
+├── index.css              # Global styles, CSS variables, dark mode
 ├── main.jsx              # Entry point, wraps app in BrowserRouter + StrictMode
 ├── components/
 │   ├── Navbar.jsx        # Nav bar with NavLink to / and /about
@@ -53,12 +64,6 @@ src/
 - Default vs named exports/imports
 - JSX comment syntax `{/* */}`
 - Template literals in JSX
-
-## Running Locally
-```
-npm run dev
-```
-Then open http://localhost:5173/
 
 ## Notes
 - CSS variables are defined in `index.css` — change colors there to update the whole app

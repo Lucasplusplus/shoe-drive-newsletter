@@ -1,12 +1,14 @@
+import './About.css'
+
 function About() {
   return (
-    <div>
+    <main className="about enter">
       <h1>About the Program</h1>
-      <p>
+      <p className="about-text">
         This newsletter shares stories from youth-led shoe drives happening
         in communities across the country.
       </p>
-    </div>
+    </main>
   )
 }
 

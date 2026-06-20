@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar'
 import StoryPage from './pages/StoryPage'
+import Footer from './components/Footer'
 
 function App() {
  return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/stories/:id" element={<StoryPage />} />
     </Routes>
+    <Footer />
   </>
  )
 }

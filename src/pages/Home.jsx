@@ -1,19 +1,31 @@
 import '../App.css'
-import StoryCard from '../components/StoryCard'
+import LeadStory from '../components/LeadStory'
+import RailStory from '../components/RailStory'
 import stories from '../data/stories'
 
 function Home() {
+  const [lead, ...rest] = stories
+
   return (
     <>
-      <header className="site-header">
-        <h1>Shoes for The Homeless Youth Ambassadors Program Newsletter</h1>{/* hardcoded title text */}
-        <p>Stories from youth-led shoe drives in communities everywhere.</p>
+      <header className="site-header enter">
+        <p className="eyebrow">Shoes for the Homeless</p>
+        <h1>Youth Ambassadors Newsletter</h1>
+        <p className="site-header-tagline">
+          Stories from youth-led shoe drives in communities everywhere.
+        </p>
       </header>
-      <main className="story-grid">{/* HTML element that will contain the story cards, and the class name is for styling purposes */}
-        {stories.map((story) => (
-          <StoryCard key={story.id} story={story} />
-        ))}
-      </main>
+
+      <div className="home-columns enter">
+        <section className="lead-column">
+          <LeadStory story={lead} />
+        </section>
+        <aside className="rail-column">
+          {rest.map((story) => (
+            <RailStory key={story.id} story={story} />
+          ))}
+        </aside>
+      </div>
     </>
   )
 }

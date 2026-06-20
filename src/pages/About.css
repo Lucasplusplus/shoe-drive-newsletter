@@ -1,0 +1,26 @@
+.about {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 44px;
+  line-height: 1.1;
+  margin: 0 0 20px;
+}
+
+@media (max-width: 640px) {
+  .about h1 {
+    font-size: 32px;
+  }
+}
+
+.about-text {
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text);
+  margin: 0 auto;
+}

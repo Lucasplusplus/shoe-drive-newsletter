@@ -1,0 +1,71 @@
+.issue {
+  width: 100%;
+  max-width: 65ch;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+.issue-eyebrow {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0;
+}
+
+.issue-marker {
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--accent);
+  margin: 14px 0 24px;
+}
+
+.issue-title {
+  font-size: 44px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px;
+}
+
+@media (max-width: 640px) {
+  .issue-title {
+    font-size: 32px;
+  }
+}
+
+.issue-meta {
+  font-family: var(--sans);
+  font-size: 15px;
+  color: var(--muted);
+  margin: 0 0 40px;
+}
+
+.issue-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0 0 40px;
+}
+
+.issue-body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.issue-back {
+  display: inline-block;
+  margin-top: 56px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.issue-back:hover {
+  text-decoration: underline;
+}
